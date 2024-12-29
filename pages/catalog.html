@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+
+  <body class="body">
+    <div class="page">
+      <input class="overlay__toggler" type="checkbox" name="" id="menu" />
+      <div class="overlay">
+        <div class="mobile-menu">
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__nav-list">
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.3527 15.0805C14.4867 14.4188 11.8191 13.8388 13.1108 11.3987C17.0443 3.9718 14.1534 0 10.0007 0C5.7656 0 2.94717 4.1243 6.89064 11.3987C8.22151 13.853 5.45309 14.433 2.64883 15.0805C0.0879081 15.6722 -0.00792858 16.9439 0.000405028 19.1673L0.00373847 20.0007H19.9961L19.9994 19.1931C20.0094 16.9531 19.9227 15.6747 17.3527 15.0805Z"
+                        fill="#2F3035"
+                      />
+                    </svg>
+                  </div>
+                  Войти</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.3527 15.0805C14.4867 14.4188 11.8191 13.8388 13.1108 11.3987C17.0443 3.9718 14.1534 0 10.0007 0C5.7656 0 2.94717 4.1243 6.89064 11.3987C8.22151 13.853 5.45309 14.433 2.64883 15.0805C0.0879081 15.6722 -0.00792858 16.9439 0.000405028 19.1673L0.00373847 20.0007H19.9961L19.9994 19.1931C20.0094 16.9531 19.9227 15.6747 17.3527 15.0805Z"
+                        fill="#2F3035"
+                      />
+                    </svg>
+                  </div>
+                  Регистрация</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon">
+                    <svg
+                      width="20"
+                      height="19"
+                      viewBox="0 0 20 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 6.85744C10.195 5.9241 11.2892 1.6666 14.485 1.6666C16.335 1.6666 18.3333 2.9591 18.3333 5.83577C18.3333 9.0916 15.3108 12.8941 10 16.3599C4.68917 12.8941 1.66667 9.0916 1.66667 5.83577C1.66667 2.93244 3.64083 1.66494 5.48083 1.66494C8.75 1.66494 9.76833 5.9366 10 6.85744ZM0 5.83577C0 9.22577 2.55 13.7366 10 18.3333C17.45 13.7366 20 9.22577 20 5.83577C20 -0.799231 11.96 -1.68756 10 2.7216C8.05167 -1.6634 0 -0.836731 0 5.83577Z"
+                        fill="#2F3035"
+                      />
+                    </svg>
+                  </div>
+                  Избранное</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon">
+                    <svg
+                      width="30"
+                      height="23"
+                      viewBox="0 0 30 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M30 0L29.0713 2.5H26.66L22.3175 17.5H5.76875L0 3.75H21.015L20.31 6.25H3.76L7.43125 15H20.4662L24.7563 0H30ZM10.625 18.75C9.59 18.75 8.75 19.59 8.75 20.625C8.75 21.6612 9.59 22.5 10.625 22.5C11.66 22.5 12.5 21.6612 12.5 20.625C12.5 19.59 11.66 18.75 10.625 18.75ZM19.25 10L16.875 18.75C15.84 18.75 15 19.5888 15 20.625C15 21.6612 15.84 22.5 16.875 22.5C17.91 22.5 18.75 21.6612 18.75 20.625C18.75 19.59 17.91 18.75 16.875 18.75L19.25 10Z"
+                        fill="#2F3035"
+                      />
+                    </svg>
+                  </div>
+                  Корзина</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon">
+                    <svg
+                      width="18"
+                      height="22"
+                      viewBox="0 0 18 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.83333 13.3429C6.55719 13.3429 6.33333 13.5667 6.33333 13.8429V19.7C6.33333 19.9761 6.10948 20.2 5.83333 20.2H1.5C1.22386 20.2 1 19.9761 1 19.7V8.08711C1 7.94115 1.06378 7.80247 1.1746 7.70748L8.6746 1.27891C8.86185 1.11842 9.13815 1.11842 9.3254 1.27891L16.8254 7.70748C16.9362 7.80247 17 7.94115 17 8.08711V19.7C17 19.9761 16.7761 20.2 16.5 20.2H12.1667C11.8905 20.2 11.6667 19.9761 11.6667 19.7V13.8429C11.6667 13.5667 11.4428 13.3429 11.1667 13.3429H6.83333Z"
+                        stroke="#2F3035"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  Магазины</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon">
+                    <img src="./assets/icons/percent.svg" alt="" />
+                  </div>
+                  Акции</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon">
+                    <svg
+                      width="18"
+                      height="17"
+                      viewBox="0 0 18 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.1708 3.14282H17.0714V15.1641C17.0714 15.6815 16.6056 16 16.1009 16H1.89286C1.3882 16 1 15.6019 1 15.0844V3.14282H6.82298"
+                        stroke="#2F3035"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M11.3853 3.14286H17.0165C17.0553 3.14286 17.0942 3.11088 17.0553 3.07889L14.9582 1H3.11323L1.01609 3.07889C0.97725 3.11088 1.01609 3.14286 1.05492 3.14286H6.68614"
+                        stroke="#2F3035"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M11.7141 3.14286L10.7824 1H7.38178L6.35693 3.14286"
+                        stroke="#2F3035"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M11.7141 3.14282V7.42854L9.10419 5.92274L6.35693 7.42854V3.14282"
+                        stroke="#2F3035"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                      />
+                      <path
+                        d="M10.9864 11.7143H7.1218C6.67898 11.7143 6.35693 11.276 6.35693 10.7889V10.4967C6.35693 9.96102 6.71924 9.57141 7.1218 9.57141H10.9461C11.389 9.57141 11.711 10.0097 11.711 10.4967V10.7889C11.7513 11.3247 11.389 11.7143 10.9864 11.7143Z"
+                        stroke="#2F3035"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                      />
+                    </svg>
+                  </div>
+                  Доставка и оплата</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon"></div>
+                  Квадроциклы</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon"></div>
+                  Катера</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon"></div>
+                  Гидроциклы</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon"></div>
+                  Лодки</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon"></div>
+                  Вездеходы</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon"></div>
+                  Снегоходы</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon"></div>
+                  Двигатели</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a class="mobile-menu__nav-link" href="">
+                  <div class="mobile-menu__nav-icon"></div>
+                  Запчасти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <p class="mobile-menu__address" href="">
+            Москва,<br />
+            ул. Науки 25
+          </p>
+          <label for="menu" class="mobile-menu__btn"
+            ><img
+              class="mobile-menu__img"
+              src="./assets/icons/4115230_cancel_close_delete_icon.svg"
+              alt=""
+            />
+          </label>
+        </div>
+      </div>
+      <header class="header header-card header-catalog">
+        <div class="header-top">
+          <div class="wrapper">
+            <label for="menu" class="mobile-menu-ham">
+              <svg
+                width="34"
+                height="28"
+                viewBox="0 0 34 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  y="0.831909"
+                  width="33.6735"
+                  height="3"
+                  rx="1.5"
+                  fill="#2F3035"
+                />
+                <rect
+                  y="12.8319"
+                  width="33.6735"
+                  height="3"
+                  rx="1.5"
+                  fill="#2F3035"
+                />
+                <rect
+                  y="24.8319"
+                  width="33.6735"
+                  height="3"
+                  rx="1.5"
+                  fill="#2F3035"
+                />
+              </svg>
+            </label>
+            <nav class="header-top__nav">
+              <a class="header-top__nav-link" href="">Магазины</a>
+              <a class="header-top__nav-link" href="">Акции</a>
+              <a class="header-top__nav-link header-top__nav-link-last" href=""
+                >Доставка и оплата</a
+              >
+            </nav>
+            <a class="header-top__logo" href="../index.html"
+              ><img
+                class="header-top__logo-img"
+                src="../assets/icons/лого.svg"
+                alt=""
+            /></a>
+            <a class="header-top__logo-mobile" href=""
+              ><img src="../assets/icons/DRIVE_MOTO.png" alt=""
+            /></a>
+            <a class="header-top__address" href="">Москва, ул. Науки 25</a>
+            <div class="header-top__socials">
+              <a class="header-top__socials-link" href=""
+                ><img
+                  class="social-link-img"
+                  src="../assets/icons/Vector.svg"
+                  alt=""
+              /></a>
+              <a class="header-top__socials-link" href=""
+                ><img
+                  class="social-link-img"
+                  src="../assets/icons/Vector (1).svg"
+                  alt=""
+              /></a>
+              <a class="header-top__socials-link" href="">
+                <img
+                  class="social-link-img"
+                  src="../assets/icons/Vector (2).svg"
+                  alt=""
+                />
+
+                <span class="social-link__counter">1</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="wrapper">
+            <nav class="header-bottom__nav header-bottom__catalog">
+              <a class="header-bottom__nav-link" href="./catalog.html">Квадроциклы</a>
+              <a class="header-bottom__nav-link" href="./catalog.html">Катера</a>
+              <a
+                class="header-bottom__nav-link header-bottom__nav-link_active"
+                href="./catalog.html"
+                >Гидроциклы</a
+              >
+              <a class="header-bottom__nav-link" href="./catalog.html">Лодки</a>
+              <a class="header-bottom__nav-link" href="./catalog.html">Вездеходы</a>
+              <a class="header-bottom__nav-link" href="./catalog.html">Снегоходы</a>
+              <a class="header-bottom__nav-link" href="./catalog.html">Двигатели</a>
+              <a class="header-bottom__nav-link" href="./catalog.html">Запчасти</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main-catalog">
+        <section class="catalog">
+          <div class="wrapper">
+            <div class="breadcrumbs">
+              <a href="../index.html" class="breadcrumbs__link">Главная</a>
+
+              <a href="" class="breadcrumbs__link">гидроциклы</a>
+            </div>
+            <h1 class="catalog__header">Гидроциклы</h1>
+            <div class="catalog__header-box">
+              <div class="catalog__header_select-mobile">
+                <select name="list-param" id="" class="select__list">
+                  <option value="pop" class="select__item">
+                    по популярности
+                  </option>
+                  <option value="price" class="select__item">по цене</option>
+                  <option value="nal" class="select__item">по наличию</option>
+                  <option value="zak" class="select__item">под заказ</option>
+                </select>
+                <button class="select__button">
+                  <svg
+                    width="23"
+                    height="21"
+                    viewBox="0 0 23 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="1"
+                      width="21"
+                      height="19"
+                      stroke="#2F3035"
+                      stroke-width="2"
+                    />
+                    <rect
+                      x="7"
+                      y="6"
+                      width="2"
+                      height="2"
+                      fill="#2F3035"
+                      stroke="#2F3035"
+                      stroke-width="2"
+                    />
+                    <rect
+                      x="7"
+                      y="13"
+                      width="2"
+                      height="2"
+                      fill="#2F3035"
+                      stroke="#2F3035"
+                      stroke-width="2"
+                    />
+                    <rect
+                      x="14"
+                      y="6"
+                      width="2"
+                      height="2"
+                      fill="#2F3035"
+                      stroke="#2F3035"
+                      stroke-width="2"
+                    />
+                    <rect
+                      x="14"
+                      y="13"
+                      width="2"
+                      height="2"
+                      fill="#2F3035"
+                      stroke="#2F3035"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+                <button class="select__button">
+                  <svg
+                    width="25"
+                    height="19"
+                    viewBox="0 0 25 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.3">
+                      <rect
+                        x="6"
+                        width="19"
+                        height="3"
+                        rx="1.5"
+                        fill="#2F3035"
+                      />
+                      <rect
+                        x="6"
+                        y="8"
+                        width="19"
+                        height="3"
+                        rx="1.5"
+                        fill="#2F3035"
+                      />
+                      <rect
+                        x="6"
+                        y="16"
+                        width="19"
+                        height="3"
+                        rx="1.5"
+                        fill="#2F3035"
+                      />
+                      <rect width="3" height="3" rx="1.5" fill="#2F3035" />
+                      <rect
+                        y="8"
+                        width="3"
+                        height="3"
+                        rx="1.5"
+                        fill="#2F3035"
+                      />
+                      <rect
+                        y="16"
+                        width="3"
+                        height="3"
+                        rx="1.5"
+                        fill="#2F3035"
+                      />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+              <div class="catalog__header-buttons">
+                <button class="catalog__header-button">Полноприводные</button>
+                <button class="catalog__header-button">от 5000</button>
+                <button class="catalog__header-button">BRP</button>
+                <button class="catalog__header-button">еще</button>
+              </div>
+              <div class="catalog__header_select">
+                <select name="list-param" id="" class="select__list">
+                  <option value="pop" class="select__item">
+                    по популярности
+                  </option>
+                  <option value="price" class="select__item">по цене</option>
+                  <option value="nal" class="select__item">по наличию</option>
+                  <option value="zak" class="select__item">под заказ</option>
+                </select>
+                <button class="select__button">
+                  <svg
+                    width="23"
+                    height="21"
+                    viewBox="0 0 23 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="1"
+                      y="1"
+                      width="21"
+                      height="19"
+                      stroke="#2F3035"
+                      stroke-width="2"
+                    />
+                    <rect
+                      x="7"
+                      y="6"
+                      width="2"
+                      height="2"
+                      fill="#2F3035"
+                      stroke="#2F3035"
+                      stroke-width="2"
+                    />
+                    <rect
+                      x="7"
+                      y="13"
+                      width="2"
+                      height="2"
+                      fill="#2F3035"
+                      stroke="#2F3035"
+                      stroke-width="2"
+                    />
+                    <rect
+                      x="14"
+                      y="6"
+                      width="2"
+                      height="2"
+                      fill="#2F3035"
+                      stroke="#2F3035"
+                      stroke-width="2"
+                    />
+                    <rect
+                      x="14"
+                      y="13"
+                      width="2"
+                      height="2"
+                      fill="#2F3035"
+                      stroke="#2F3035"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </button>
+                <button class="select__button">
+                  <svg
+                    width="25"
+                    height="19"
+                    viewBox="0 0 25 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.3">
+                      <rect
+                        x="6"
+                        width="19"
+                        height="3"
+                        rx="1.5"
+                        fill="#2F3035"
+                      />
+                      <rect
+                        x="6"
+                        y="8"
+                        width="19"
+                        height="3"
+                        rx="1.5"
+                        fill="#2F3035"
+                      />
+                      <rect
+                        x="6"
+                        y="16"
+                        width="19"
+                        height="3"
+                        rx="1.5"
+                        fill="#2F3035"
+                      />
+                      <rect width="3" height="3" rx="1.5" fill="#2F3035" />
+                      <rect
+                        y="8"
+                        width="3"
+                        height="3"
+                        rx="1.5"
+                        fill="#2F3035"
+                      />
+                      <rect
+                        y="16"
+                        width="3"
+                        height="3"
+                        rx="1.5"
+                        fill="#2F3035"
+                      />
+                    </g>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="catalog-holder">
+              <div class="catalog-holder__params">
+                <div class="params">
+                  <button class="params__btn params__btn-active">
+                    Параметры
+                  </button>
+                  <button class="params__btn">по марке</button>
+                </div>
+                <div class="params__availability params__box">
+                  <label for="params__availability" class="label__header">
+                    <img
+                      src="../assets/icons/Expand more.1.1.1.1.1.svg"
+                      alt=""
+                    />
+                    Наличие</label
+                  >
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="params__availability"
+                    class="input__header"
+                  />
+
+                  <div class="params__list">
+                    <div class="params__item">
+                      <label for="check1" class="item-label"
+                        >В наличии
+                        <input
+                          type="radio"
+                          name="availability"
+                          id="check1"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox"></div>
+                      </label>
+
+                      <label for="check2" class="item-label"
+                        >Под заказ
+                        <input
+                          type="radio"
+                          name="availability"
+                          id="check2"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="params__box params__new">
+                  <label for="params__new" class="label__header">
+                    <img
+                      src="../assets/icons/Expand more.1.1.1.1.1.svg"
+                      alt=""
+                    />
+                    Новинки
+                  </label>
+
+                  <div class="params__list">
+                    <div class="params__item params__new__item">
+                      <label for="check3" class="item-label"
+                        >Все
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="check3"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox"></div>
+                      </label>
+
+                      <label for="check4" class="item-label"
+                        >Новинки
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="check4"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox"></div>
+                      </label>
+
+                      <label for="check5" class="item-label"
+                        >Акции
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="check5"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox"></div>
+                      </label>
+                    </div>
+                  </div>
+
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="params__new"
+                    class="input__header"
+                  />
+                </div>
+
+                <div class="params__box params__price">
+                  <label for="params__price" class="label__header">
+                    <img
+                      src="../assets/icons/Expand more.1.1.1.1.1.svg"
+                      alt=""
+                    />
+                    Цена
+                  </label>
+                  <input
+                    checked
+                    type="checkbox"
+                    name=""
+                    id="params__price"
+                    class="input__header"
+                  />
+                  <div class="params__list">
+                    <div id="slider"></div>
+
+                    <div class="slider-row">
+                      <p class="slider-row__min">
+                        От <span class="slider-row__min-value">100000</span>
+                      </p>
+
+                      <p class="slider-row__max">
+                        До <span class="slider-row__max-value">500000</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="params__box params__power">
+                  <div class="params__box-row">
+                    <p class="params__box-row-heading">Мощность, л.с.</p>
+                    <div class="select">
+                      <div class="select-header">
+                        <span class="select-header-value">90</span>
+                        <img
+                          class="select-chevron"
+                          src="../assets/icons/Expand more.1.1.1.1.1.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="select-body">
+                        <button class="select-body-btn">90</button>
+                        <button class="select-body-btn">130</button>
+                        <button class="select-body-btn">154</button>
+                        <button class="select-body-btn">230</button>
+                        <button class="select-body-btn">300</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="params__box params__power">
+                  <div class="params__box-row">
+                    <p class="params__box-row-heading">
+                      Мощность двигателя, л.с.
+                    </p>
+                    <div class="select">
+                      <div class="select-header">
+                        <span class="select-header-value">90</span>
+                        <img
+                          class="select-chevron"
+                          src="../assets/icons/Expand more.1.1.1.1.1.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="select-body">
+                        <button class="select-body-btn">90</button>
+                        <button class="select-body-btn">130</button>
+                        <button class="select-body-btn">154</button>
+                        <button class="select-body-btn">230</button>
+                        <button class="select-body-btn">300</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="params__box params__power">
+                  <div class="params__box-row">
+                    <p class="params__box-row-heading">Макс. скорость</p>
+                    <div class="select">
+                      <div class="select-header">
+                        <span class="select-header-value">90</span>
+                        <img
+                          class="select-chevron"
+                          src="../assets/icons/Expand more.1.1.1.1.1.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="select-body">
+                        <button class="select-body-btn">110</button>
+                        <button class="select-body-btn">130</button>
+                        <button class="select-body-btn">150</button>
+                        <button class="select-body-btn">180</button>
+                        <button class="select-body-btn">210</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="params__box params__brend">
+                  <label for="params__brend" class="label__header">
+                    <img
+                      src="../assets/icons/Expand more.1.1.1.1.1.svg"
+                      alt=""
+                    />
+                    Бренд
+                  </label>
+
+                  <div class="params__list">
+                    <div class="params__item params__brend__item">
+                      <label for="check6" class="item-label"
+                        >BRP
+                        <input
+                          type="checkbox"
+                          name="brend"
+                          id="check6"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox brend__checkbox"></div>
+                      </label>
+
+                      <label for="check7" class="item-label"
+                        >Spark 2
+                        <input
+                          type="checkbox"
+                          name="brend"
+                          id="check7"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox brend__checkbox"></div>
+                      </label>
+
+                      <label for="check8" class="item-label"
+                        >Spark 3
+                        <input
+                          type="checkbox"
+                          name="brend"
+                          id="check8"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox brend__checkbox"></div>
+                      </label>
+                    </div>
+                    <a href="" class="params__item-link">Показать еще</a>
+                  </div>
+
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="params__brend"
+                    class="input__header"
+                  />
+                </div>
+
+                <div class="params__box params__model">
+                  <label for="params__model" class="label__header">
+                    <img
+                      src="../assets/icons/Expand more.1.1.1.1.1.svg"
+                      alt=""
+                    />
+                    Модель
+                  </label>
+
+                  <div class="params__list">
+                    <input
+                      type="text"
+                      class="model-input"
+                      placeholder="Введите модель "
+                    />
+                    <div class="params__item params__model__item">
+                      <label for="check9" class="item-label"
+                        >Sea-doo Spark 2
+                        <input
+                          type="checkbox"
+                          name="brend"
+                          id="check9"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox brend__checkbox"></div>
+                      </label>
+
+                      <label for="check10" class="item-label"
+                        >SeaDoo Spark 90
+                        <input
+                          type="checkbox"
+                          name="brend"
+                          id="check10"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox brend__checkbox"></div>
+                      </label>
+
+                      <label for="check11" class="item-label"
+                        >SeaDoo GTI 155
+                        <input
+                          type="checkbox"
+                          name="brend"
+                          id="check11"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox brend__checkbox"></div>
+                      </label>
+
+                      <label for="check12" class="item-label"
+                        >SeaDoo GTR 230
+                        <input
+                          type="checkbox"
+                          name="brend"
+                          id="check12"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox brend__checkbox"></div>
+                      </label>
+                    </div>
+                    <a href="" class="params__item-link">Показать еще</a>
+                  </div>
+
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="params__model"
+                    class="input__header"
+                  />
+                </div>
+                <div class="params__box params__sale">
+                  <label for="params__sale" class="label__header">
+                    <img
+                      src="../assets/icons/Expand more.1.1.1.1.1.svg"
+                      alt=""
+                    />
+                    Акции
+                  </label>
+
+                  <div class="params__list">
+                    <div class="params__item params__sale__item">
+                      <button class="sale-button">SALE</button>
+                      <button class="new-button">NEW</button>
+                      <button class="hit-button">HIT</button>
+                      <button class="diler-button">ДИЛЕР</button>
+
+                      <div class="item-input__checkbox sale__checkbox"></div>
+                    </div>
+                  </div>
+
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="params__sale"
+                    class="input__header"
+                  />
+                </div>
+
+                <div class="params__box params__country">
+                  <label for="params__country" class="label__header">
+                    <img
+                      src="../assets/icons/Expand more.1.1.1.1.1.svg"
+                      alt=""
+                    />
+                    Страны
+                  </label>
+
+                  <div class="params__list">
+                    <div class="params__item params__country__item">
+                      <label for="check13" class="item-label"
+                        >Россия
+                        <input
+                          type="checkbox"
+                          name="brend"
+                          id="check13"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox brend__checkbox"></div>
+                      </label>
+
+                      <label for="check14" class="item-label"
+                        >Германия
+                        <input
+                          type="checkbox"
+                          name="brend"
+                          id="check14"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox brend__checkbox"></div>
+                      </label>
+
+                      <label for="check15" class="item-label"
+                        >Китай
+                        <input
+                          type="checkbox"
+                          name="brend"
+                          id="check15"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox brend__checkbox"></div>
+                      </label>
+
+                      <label for="check16" class="item-label"
+                        >CША
+                        <input
+                          type="checkbox"
+                          name="brend"
+                          id="check16"
+                          class="item-input"
+                        />
+                        <div class="item-input__checkbox brend__checkbox"></div>
+                      </label>
+                    </div>
+                    <a href="" class="params__item-link">Показать еще</a>
+                  </div>
+
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="params__country"
+                    class="input__header"
+                  />
+                </div>
+                <button class="params-button">ВЫБРАТЬ</button>
+
+                <label for="dop" class="dop-label"
+                  >Дополнительные параметры
+                  <img src="../assets/icons/Expand more.1.1.1.1.1.svg" alt="" />
+                </label>
+                <input type="checkbox" name="" id="dop" class="dop-input" />
+                <button class="reset-filter">Сбросить фильтр</button>
+              </div>
+              <div class="catalog-holder-overlay">
+                <div class="catalog-holder__list">
+                  <div class="catalog-holder__item">
+                    <a class="catalog-holder__link" href="./card.html">посмотреть товар</a>
+                    <button class="item__heart">
+                      <img src="../assets/icons/heart.svg" alt="" />
+                    </button>
+
+                    <img
+                      class="item__img"
+                      src="../assets/image/gidrotsikl-73936232995706_small6 1.png"
+                      alt=""
+                    />
+                    <p class="item__text item__header">
+                      Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango
+                    </p>
+                    <span class="item__price">1 049 500 ₽</span>
+                    <button class="item__basket">
+                      <img src="../assets/icons/basket.svg" alt="" />
+                    </button>
+                  </div>
+
+                  <div class="catalog-holder__item">
+                    <a class="catalog-holder__link" href="./card.html">посмотреть товар</a>
+                    <button class="item__heart">
+                      <img src="../assets/icons/heart.svg" alt="" />
+                    </button>
+                    <button class="item__button">
+                      <a class="item__sale" href="">SALE</a>
+                    </button>
+                    <img
+                      class="item__img"
+                      src="../assets/image/gidrotsikl-73936232995706_small6 2.png"
+                      alt=""
+                    />
+                    <p class="item__text item__header">
+                      Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
+                    </p>
+                    <span class="item__price">1 100 475 ₽</span>
+                    <button class="item__basket">
+                      <img src="../assets/icons/basket.svg" alt="" />
+                    </button>
+                  </div>
+
+                  <div class="catalog-holder__item">
+                    <a class="catalog-holder__link" href="./card.html">посмотреть товар</a>
+                    <button class="item__heart">
+                      <img src="../assets/icons/heart.svg" alt="" />
+                    </button>
+
+                    <img
+                      class="item__img"
+                      src="../assets/image/s-l225-1.png"
+                      alt=""
+                    />
+                    <p class="item__text item__header">
+                      Гидроцикл BRP SeaDoo GTR 230hp X California green
+                    </p>
+                    <span class="item__price">1 323 700 ₽</span>
+                    <button class="item__basket">
+                      <img src="../assets/icons/basket.svg" alt="" />
+                    </button>
+                  </div>
+                  <button class="params-button mobile-button">
+                    показать еще
+                  </button>
+                  <div class="catalog-holder__item catalog-holder__item-hidden">
+                    <a class="catalog-holder__link" href="./card.html">посмотреть товар</a>
+                    <button class="item__heart">
+                      <img src="../assets/icons/heart.svg" alt="" />
+                    </button>
+                    <button class="item__button">
+                      <a class="item__sale" href="">SALE</a>
+                    </button>
+                    <img
+                      class="item__img"
+                      src="../assets/image/gidrotsikl-73936232995706_small6 3.png"
+                      alt=""
+                    />
+                    <p class="item__text item__header">
+                      Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream
+                    </p>
+                    <p class="item__out-of-stock">нет в наличии</p>
+                    <a class="item__link" href="">Сообщить о поступлении</a>
+                  </div>
+
+                  <div class="catalog-holder__item catalog-holder__item-hidden">
+                    <a class="catalog-holder__link" href="./card.html">посмотреть товар</a>
+                    <button class="item__heart">
+                      <img src="../assets/icons/heart.svg" alt="" />
+                    </button>
+                    <img
+                      class="item__img"
+                      src="../assets/image/gidrotsikl-73936232995706_small6 4.png"
+                      alt=""
+                    />
+                    <p class="item__text item__header">
+                      Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal
+                    </p>
+                    <span class="item__price">1 543 000 ₽</span>
+                    <button class="item__basket">
+                      <img src="../assets/icons/basket.svg" alt="" />
+                    </button>
+                  </div>
+
+                  <div class="catalog-holder__item catalog-holder__item-hidden">
+                    <a class="catalog-holder__link" href="./card.html">посмотреть товар</a>
+                    <button class="item__heart">
+                      <img src="../assets/icons/heart.svg" alt="" />
+                    </button>
+                    <img
+                      class="item__img"
+                      src="../assets/image/s-l225-2.png"
+                      alt=""
+                    />
+                    <p class="item__text item__header">
+                      Гидроцикл BRP SeaDoo Spark 60hp 2 up
+                    </p>
+                    <span class="item__price">732 345 ₽</span>
+                    <button class="item__basket">
+                      <img src="../assets/icons/basket.svg" alt="" />
+                    </button>
+                  </div>
+
+                  <div class="catalog-holder__item catalog-holder__item-hidden">
+                    <a class="catalog-holder__link" href="./card.html">посмотреть товар</a>
+                    <button class="item__heart">
+                      <img src="../assets/icons/heart.svg" alt="" />
+                    </button>
+                    <img
+                      class="item__img"
+                      src="../assets/image/gidrotsikl-73936232995706_small6 5.png"
+                      alt=""
+                    />
+                    <p class="item__text item__header">
+                      Гидроцикл BRP SeaDoo Spark GTS 90hp Rental
+                    </p>
+                    <span class="item__price">857 666 ₽</span>
+                    <button class="item__basket">
+                      <img src="../assets/icons/basket.svg" alt="" />
+                    </button>
+                  </div>
+
+                  <div class="catalog-holder__item catalog-holder__item-hidden">
+                    <a class="catalog-holder__link" href="./card.html">посмотреть товар</a>
+                    <button class="item__heart">
+                      <img src="../assets/icons/heart.svg" alt="" />
+                    </button>
+                    <button class="item__button">
+                      <a class="item__sale" href="">SALE</a>
+                    </button>
+                    <img
+                      class="item__img"
+                      src="../assets/image/gidrotsikl-73936232995706_small6 6.png"
+                      alt=""
+                    />
+                    <p class="item__text item__header">
+                      Гидроцикл BRP SeaDoo WAKE 230hp PRO Teal blue
+                    </p>
+                    <span class="item__price">1 229 711 ₽</span>
+                    <button class="item__basket">
+                      <img src="../assets/icons/basket.svg" alt="" />
+                    </button>
+                  </div>
+
+                  <div class="catalog-holder__item catalog-holder__item-hidden">
+                    <a class="catalog-holder__link" href="./card.html">посмотреть товар</a>
+                    <button class="item__heart">
+                      <img src="../assets/icons/heart.svg" alt="" />
+                    </button>
+                    <img
+                      class="item__img"
+                      src="../assets/image/s-l225-3.png"
+                      alt=""
+                    />
+                    <p class="item__text item__header">
+                      Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper
+                    </p>
+                    <span class="item__price">587 440 ₽</span>
+                    <button class="item__basket">
+                      <img src="../assets/icons/basket.svg" alt="" />
+                    </button>
+                  </div>
+
+                  <div class="catalog-holder__item catalog-holder__item-hidden">
+                    <a class="catalog-holder__link" href="./card.html">посмотреть товар</a>
+                    <button class="item__heart">
+                      <img src="../assets/icons/heart.svg" alt="" />
+                    </button>
+                    <img
+                      class="item__img"
+                      src="../assets/image/gidrotsikl-73936232995706_small6 7.png"
+                      alt=""
+                    />
+                    <p class="item__text item__header">
+                      Гидроцикл Spark 2-UP 900 Ho Ace Pineapple
+                    </p>
+                    <span class="item__price">587 440 ₽</span>
+                    <button class="item__basket">
+                      <img src="../assets/icons/basket.svg" alt="" />
+                    </button>
+                  </div>
+
+                  <div class="catalog-holder__item catalog-holder__item-hidden">
+                    <a class="catalog-holder__link" href="./card.html">посмотреть товар</a>
+                    <button class="item__heart">
+                      <img src="../assets/icons/heart.svg" alt="" />
+                    </button>
+                    <button class="item__button">
+                      <a class="item__sale" href="">SALE</a>
+                    </button>
+                    <img
+                      class="item__img"
+                      src="../assets/image/gidrotsikl-73936232995706_small6 8.png"
+                      alt=""
+                    />
+                    <p class="item__text item__header">
+                      Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla
+                    </p>
+                    <p class="item__out-of-stock">нет в наличии</p>
+                    <a class="item__link" href="">Сообщить о поступлении</a>
+                  </div>
+
+                  <div class="catalog-holder__item catalog-holder__item-hidden">
+                    <a class="catalog-holder__link" href="./card.html">посмотреть товар</a>
+                    <button class="item__heart">
+                      <img src="../assets/icons/heart.svg" alt="" />
+                    </button>
+                    <img
+                      class="item__img"
+                      src="../assets/image/s-l225-4.png"
+                      alt=""
+                    />
+                    <p class="item__text item__header">
+                      Спасательный жилет BRP Men's Airflow PFD
+                    </p>
+                    <p class="item__out-of-stock">нет в наличии</p>
+                    <a class="item__link" href="">Сообщить о поступлении</a>
+                  </div>
+                </div>
+                <div class="pages">
+                  <a href="" class="pages__num pages__num-active">1</a>
+                  <a href="" class="pages__num">2</a>
+                  <a href="" class="pages__num">3</a>
+                  <a href="" class="pages__num">4</a>
+                  <a href="" class="pages__num">5</a>
+                  <a href="" class="pages__num">...</a>
+                  <a href="" class="pages__num">11</a>
+                </div>
+              </div>
+            </div>
+            <div class="other-products other-products-hidden">
+              <h2 class="heading other-products__heading">
+                С этим товаром покупают
+              </h2>
+              <div class="popular-product__nav other-products__nav">
+                <a class="popular-product__nav-link" href="">запчасти</a>
+                <a class="popular-product__nav-link" href="">моторы</a>
+                <a class="popular-product__nav-link" href="">шины </a>
+                <a
+                  class="popular-product__nav-link popular-product__nav-link-active"
+                  href=""
+                  >электроника</a
+                >
+                <a class="popular-product__nav-link" href="">инструменты</a>
+                <a class="popular-product__nav-link" href="">аксессуары </a>
+              </div>
+              <div class="other-products__arrows">
+                <div class="slider__button-prev slider__button-prev_sec">
+                  <img src="../assets/icons/left.png" alt="" />
+                </div>
+                <div class="slider__button-next slider__button-next_sec">
+                  <img src="../assets/icons/right.png" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper other-products__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slider__item">
+                      <button class="item__heart">
+                        <img src="../assets/icons/heart.svg" alt="" />
+                      </button>
+                      <button class="item__button">
+                        <a class="item__sale" href="">SALE</a>
+                      </button>
+                      <img
+                        class="item__img other-products__slider-img"
+                        src="../assets/image/portable-system.png"
+                        alt=""
+                      />
+                      <p class="item__text first-item__text">
+                        BRP Audio-портативная система
+                      </p>
+                      <p class="item__out-of-stock">нет в наличии</p>
+                      <a class="item__link" href="">Сообщить о поступлении</a>
+                      <div class="slider__item-card-active">
+                        <a class="card-active-link" href="">посмотреть товар</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__item">
+                      <button class="item__heart">
+                        <img src="../assets/icons/heart.svg" alt="" />
+                      </button>
+
+                      <img
+                        class="item__img other-products__slider-img"
+                        src="../assets/image/echo.png"
+                        alt=""
+                      />
+                      <p class="item__text second-item__text">
+                        Garmin Echomap Plus 62cv
+                      </p>
+                      <span class="item__price">45 800 ₽</span>
+                      <button class="item__basket">
+                        <img src="../assets/icons/basket.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__item">
+                      <button class="item__heart">
+                        <img src="../assets/icons/heart.svg" alt="" />
+                      </button>
+                      <button class="item__button">
+                        <a class="item__sale" href="">SALE</a>
+                      </button>
+                      <img
+                        class="item__img"
+                        src="../assets/image/key.png"
+                        alt=""
+                      />
+                      <p class="item__text third-item__text">
+                        RF D.E.S.S.TM Key
+                      </p>
+                      <p class="item__out-of-stock">нет в наличии</p>
+                      <a class="item__link" href="">Сообщить о поступлении</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__item">
+                      <button class="item__heart">
+                        <img src="../assets/icons/heart.svg" alt="" />
+                      </button>
+
+                      <img
+                        class="item__img"
+                        src="../assets/image/man-suit.png"
+                        alt=""
+                      />
+                      <p class="item__text fourth-item__text">
+                        Мужской костюм 3мм
+                      </p>
+                      <span class="item__price">7 000 ₽</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__item">
+                      <button class="item__heart">
+                        <img src="../assets/icons/heart.svg" alt="" />
+                      </button>
+                      <button class="item__button">
+                        <a class="item__sale" href="">SALE</a>
+                      </button>
+                      <img
+                        class="item__img other-products__slider-img"
+                        src="../assets/image/portable-system.png"
+                        alt=""
+                      />
+                      <p class="item__text first-item__text">
+                        BRP Audio-портативная система
+                      </p>
+                      <p class="item__out-of-stock">нет в наличии</p>
+                      <a class="item__link" href="">Сообщить о поступлении</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__item">
+                      <button class="item__heart">
+                        <img src="../assets/icons/heart.svg" alt="" />
+                      </button>
+
+                      <img
+                        class="item__img other-products__slider-img"
+                        src="../assets/image/echo.png"
+                        alt=""
+                      />
+                      <p class="item__text second-item__text">
+                        Garmin Echomap Plus 62cv
+                      </p>
+                      <span class="item__price">45 800 ₽</span>
+                      <button class="item__basket">
+                        <img src="../assets/icons/basket.svg" alt="" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__item">
+                      <button class="item__heart">
+                        <img src="../assets/icons/heart.svg" alt="" />
+                      </button>
+                      <button class="item__button">
+                        <a class="item__sale" href="">SALE</a>
+                      </button>
+                      <img
+                        class="item__img"
+                        src="../assets/image/key.png"
+                        alt=""
+                      />
+                      <p class="item__text third-item__text">
+                        RF D.E.S.S.TM Key
+                      </p>
+                      <p class="item__out-of-stock">нет в наличии</p>
+                      <a class="item__link" href="">Сообщить о поступлении</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__item">
+                      <button class="item__heart">
+                        <img src="../assets/icons/heart.svg" alt="" />
+                      </button>
+
+                      <img
+                        class="item__img"
+                        src="../assets/image/man-suit.png"
+                        alt=""
+                      />
+                      <p class="item__text fourth-item__text">
+                        Мужской костюм 3мм
+                      </p>
+                      <span class="item__price">7 000 ₽</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-sec"></div>
+              </div>
+
+              <button
+                class="popular-product__button popular-product__button-mobile"
+              >
+                Показать еще
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="wrapper card-wrapper">
+          <div class="footer__top footer__top-card">
+            <div class="footer__form-group">
+              <p class="footer__form-text">
+                Подпишитесь на нашу рассылку и узнавайте о акция быстрее
+              </p>
+              <form class="footer__form" action="">
+                <input
+                  class="footer__form_input"
+                  type="email"
+                  name=""
+                  placeholder="Введите ваш e-mail:"
+                />
+                <button class="footer__form-button" type="submit">
+                  отправить
+                </button>
+              </form>
+            </div>
+            <ul class="accordion__list">
+              <li class="accordion__item">
+                <label class="accordion__header" for="info">
+                  <p class="accordion__heading">Информация</p>
+                  <div class="accordion__chevron">
+                    <img src="../assets/icons/Back_down.svg" alt="" />
+                  </div>
+                </label>
+                <input
+                  class="accordion__input-togler"
+                  type="checkbox"
+                  name=""
+                  id="info"
+                />
+                <div class="accordion__body">
+                  <a class="accordion__body-link" href="">О компании</a>
+                  <a class="accordion__body-link" href="">Контакты</a>
+                  <a class="accordion__body-link" href="">Акции</a>
+                  <a class="accordion__body-link" href="">Магазины</a>
+                </div>
+              </li>
+              <li class="accordion__item">
+                <label class="accordion__header" for="int">
+                  <p class="accordion__heading">Интернет-магазин</p>
+                  <div class="accordion__chevron">
+                    <img src="../assets/icons/Back_down.png" alt="" />
+                  </div>
+                </label>
+                <input
+                  class="accordion__input-togler"
+                  type="checkbox"
+                  name=""
+                  id="int"
+                />
+                <div class="accordion__body">
+                  <a class="accordion__body-link" href=""
+                    >Доставка и самовывоз</a
+                  >
+                  <a class="accordion__body-link" href="">Оплата</a>
+                  <a class="accordion__body-link" href="">Возврат-обмен</a>
+                  <a class="accordion__body-link" href="">Новости</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="footer__info">
+              <li class="footer__item footer__item-main">
+                <a href="">Информация</a>
+              </li>
+              <li class="footer__item"><a href="">О компании</a></li>
+              <li class="footer__item"><a href="">Контакты</a></li>
+              <li class="footer__item"><a href="">Акции</a></li>
+              <li class="footer__item"><a href="">Магазины</a></li>
+            </ul>
+            <ul class="footer__internet-shop">
+              <li class="footer__item footer__item-main">
+                <a href="">Интернет-магазин</a>
+              </li>
+              <li class="footer__item">
+                <a href="">Доставка и самовывоз</a>
+              </li>
+              <li class="footer__item"><a href="">Оплата</a></li>
+              <li class="footer__item"><a href="">Возврат-обмен</a></li>
+              <li class="footer__item"><a href="">Новости</a></li>
+            </ul>
+            <div class="footer__social footer__catalog">
+              <a href=""
+                ><img
+                  class="footer__social-img"
+                  src="../assets/icons/instagram-footer.svg"
+                  alt=""
+              /></a>
+              <a href=""><img src="../assets/icons/vk-footer.svg" alt="" /></a>
+              <a href=""
+                ><img
+                  class="footer__social-img"
+                  src="../assets/icons/facebook-footer.svg"
+                  alt=""
+              /></a>
+              <a href=""
+                ><img
+                  class="footer__social-img"
+                  src="../assets/icons/youtube-footer.svg"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <a class="footer__bottom-link" href="">Договор оферты</a>
+            <a class="footer__bottom-link" href=""
+              >Политика обработки персональных данных</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+      integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js.js"></script>
+    <script>
+      $("#slider").slider({
+        min: 0,
+        range: true,
+        max: 1000000,
+        values: [100000, 420000],
+        slide: function (e, ui) {
+          const min = ui.values[0];
+          const max = ui.values[1];
+          $(".slider-row__min-value").text(min);
+          $(".slider-row__max-value").text(max);
+        },
+      });
+    </script>
+  </body>
+</html>
