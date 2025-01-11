@@ -44,6 +44,7 @@
       background: $bazovyy;
       border-radius: 3px;
       border: none;
+      
     }
   }
   &-holder {
@@ -623,6 +624,9 @@ html .ui-button.ui-state-disabled:active {
     justify-content: center;
     margin: 0 auto;
     gap: 42px;
+  }
+  .catalog__header-button{
+    white-space: nowrap;
   }
 
   .item__img {
